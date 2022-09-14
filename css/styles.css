@@ -1,6 +1,29 @@
-body {
-  background-color: #f5f5f5;
-  color: #757575;
+/* CSS-переменные */
+:root {
+  --primary-text-color: #757575;
+  --primary-bg-color: #f5f5f5;
+  --title-text-color: #212121;
+  --header-color: #ffffff;
+  --accent-color: #2196f3;
+  --footer-color: #2f303a;
+}
+
+.body {
+  background-color: var(--primary-bg-color);
+  color: var(--primary-text-color);
+}
+
+.header {
+  background-color: var(--header-color);
+}
+
+/* убирание точек */
+.list,
+.connection-list,
+.benefits-list,
+.team-list,
+.connect-list {
+  list-style: none;
 }
 /* цвет  вторичного текста (заголовки) #212121 */
 /* цвет основного текста(которого больше) #757575*/
@@ -9,10 +32,92 @@ body {
 /* цвет футера и основной шапки #2F303A*/
 /* цвет background наша команда #F5F4FA*/
 /* акцент #2196F3 */
-.logo: hover {
+
+/* выделение лого */
+.logo {
   color: #000000;
 }
 
+.logo:hover,
+.logo:focus {
+  color: var(--accent-color);
+}
+
 .accent {
-  color: #2196f3;
+  color: var(--accent-color);
+}
+
+/* навигация по сайту */
+.site-nav .link {
+  color: var(--title-text-color);
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+
+/* связь с компанией */
+.connection-list .link {
+  color: var(--primary-text-color);
+}
+
+.connection-list .link:hover,
+.connection-list .link:focus,
+.connect-list .address:hover,
+.connect-list .address:focus,
+.connect-list .link:hover,
+.connect-list .link:focus {
+  color: var(--accent-color);
+}
+
+/* hero */
+
+.hero-title {
+  color: var(--header-color);
+  background-color: var(--footer-color);
+}
+/*hero button */
+.button.primary {
+  color: var(--header-color);
+  background-color: var(--accent-color);
+}
+/* section */
+
+.section-title {
+  color: var(--title-text-color);
+}
+
+/* benefits */
+
+.benefits-list .title {
+  color: var(--title-text-color);
+}
+
+/* our team */
+.team-list .title {
+  color: var(--title-text-color);
+}
+
+/* footer */
+
+.footer {
+  background-color: var(--footer-color);
+}
+
+.logo-footer {
+  color: var(--header-color);
+}
+
+.logo-footer:hover,
+.logo-footer:focus {
+  color: var(--accent-color);
+}
+
+.connect-list .address {
+  color: var(--header-color);
+}
+
+.connect-list .link {
+  color: rgba(255, 255, 255, 0.6);
 }
