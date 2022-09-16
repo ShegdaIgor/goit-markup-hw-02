@@ -133,6 +133,7 @@
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 .button-list .button.secondary {
@@ -141,7 +142,15 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
+  cursor: pointer;
 }
+
+.button.secondary:hover,
+.button.secondary:focus {
+  color: var(--header-color);
+  background-color: var(--accent-color);
+}
+
 /* section */
 
 .section-title {
@@ -187,6 +196,10 @@
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
+}
+
+.works-list .link {
+  text-decoration: none;
 }
 
 .works-list .title {
